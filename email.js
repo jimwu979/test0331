@@ -26,9 +26,13 @@ var options = {
     //純文字
     text: 'Hello world2', // plaintext body
     //嵌入 html 的內文
-    html: '<h2>Hi</h2> <p>I am Steve</p>', 
+    html: '<div style="width:380px;height:240px;background:url(cid:#001)"><h1 style="color:#ffffff">Done! embed background image</h1></div>',
     //附件檔案
-    attachments: []
+    attachments: [{
+        filename: 'AI.png',
+        path: 'public/img/AI.png',
+        cid: '#001' //same cid value as in the html img src
+    }]
 };
 
 //發送信件方法
